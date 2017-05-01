@@ -1,0 +1,31 @@
+
+<html>
+<body>
+<style>
+    body
+    {
+        background-image:url(images/arrowup.png) ;
+        -webkit-transform:rotate(90deg);
+        -moz-transform:rotate(90deg);
+        background-repeat:no-repeat;
+        /*background-position:center;*/
+        background-color:#ECEEEF;
+        border-color:#999;
+    }
+
+</style>
+<script>
+    var w = window,
+        d = document,
+        e = d.documentElement,
+        g = d.getElementsByTagName('body')[0],
+        x = w.innerWidth || e.clientWidth || g.clientWidth,
+        y = w.innerHeight|| e.clientHeight|| g.clientHeight;
+    alert(x + ' × ' + y);
+    setInterval(function(){
+        document.body.style.backgroundImage = "url('/screenshot.png?ts="+Date.now()+"')"
+    }, 4000);
+</script>
+<!--<br><input type="button" onclick="location.refresh()" value="refresh"/>-->
+</body>
+</html>
